@@ -23,6 +23,8 @@ Dark gray: hsl(0, 0%, 59%)
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
 - Weights: 400, 700 */
 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -35,28 +37,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(185, 75%, 39%)
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans';
 }
 
 .container {
-    max-width: 1000px;
+    width: 340px;
     background-color: white;
     border-radius: 15px;
     position: absolute;
+    box-shadow: 5px 10px 50px hsla(229, 23%, 23%, 0.507);
 }
 
 .imagem-bolha img {
-    max-width: 400px;
+    max-width: 340px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
 .imagem-pessoa img {
+    max-width: 110px;
     position: relative;
     bottom: 50px;
-    border-radius: 50px;
+    border-radius: 55px;
     border-style: solid;
     border-color: white;
+    border-width: 5px;
 }
 
 .imagem-pessoa {
@@ -64,13 +70,60 @@ body {
 }
 
 .infos {
-    background-color: red;
+    
 }
 
 .infos-acima {
     text-align: center;
+    position: relative;
+    bottom: 30px;
 }
 
 .infos-acima > h1 {
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
 }
+
+#idade {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.cidade {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.infos-abaixo {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.numeros {
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    text-align: center;
+}
+
+.palavras {
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+    margin-top: 7px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 20px;
+    background-color: hsla(0, 0%, 59%, 0.158);
+    height: 2px;
+    border: none;
+}
+
