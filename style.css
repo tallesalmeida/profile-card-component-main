@@ -1,28 +1,5 @@
 @charset "UTF-8";
 
-/* ## Colors
-
-### Primary
-
-Dark cyan: hsl(185, 75%, 39%)
-Very dark desaturated blue: hsl(229, 23%, 23%)
-Dark grayish blue: hsl(227, 10%, 46%)
-
-### Neutral
-
-Dark gray: hsl(0, 0%, 59%)
-
-## Typography
-
-### Body Copy
-
-- Font size (name and stats): 18px
-
-### Font
-
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700 */
-
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 * {
@@ -44,44 +21,39 @@ body {
 .container {
     width: 340px;
     background-color: white;
-    border-radius: 15px;
-    position: absolute;
-    box-shadow: 5px 10px 50px hsla(229, 23%, 23%, 0.507);
+    border-radius: 0.94rem;
+    box-shadow: 0.32rem 0.63rem 3rem hsla(229, 23%, 23%, 0.507);
 }
 
 .imagem-bolha img {
-    max-width: 340px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    max-width: 21.27rem;
+    border-top-left-radius: 0.94rem;
+    border-top-right-radius: 0.94rem;
 }
 
 .imagem-pessoa img {
-    max-width: 110px;
+    max-width: 6.875rem;
     position: relative;
-    bottom: 50px;
-    border-radius: 55px;
+    bottom: 3.1rem;
+    border-radius: 3.4rem;
     border-style: solid;
     border-color: white;
-    border-width: 5px;
+    border-width: 0.32rem;
 }
 
 .imagem-pessoa {
     text-align: center;
 }
 
-.infos {
-    
-}
-
 .infos-acima {
     text-align: center;
     position: relative;
-    bottom: 30px;
+    bottom: 1.9rem;
 }
 
 .infos-acima > h1 {
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 0.6rem;
+    font-size: 1.12rem;
     font-weight: 700;
     color: hsl(229, 23%, 23%);
 }
@@ -89,41 +61,40 @@ body {
 #idade {
     font-weight: 400;
     color: hsl(227, 10%, 46%);
-    margin-left: 5px;
-    font-size: 17px;
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
 }
 
 .cidade {
     color: hsl(0, 0%, 59%);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 .infos-abaixo {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 .numeros {
-    font-size: 18px;
+    font-size: 1.12rem;
     color: hsl(229, 23%, 23%);
     font-weight: 700;
     text-align: center;
 }
 
 .palavras {
-    font-size: 10px;
+    font-size: 0.62rem;
     color: hsl(0, 0%, 59%);
-    margin-top: 7px;
-    letter-spacing: 1px;
+    margin-top: 0.44rem;
+    letter-spacing: 0.06rem;
     text-align: center;
 }
 
 hr {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     background-color: hsla(0, 0%, 59%, 0.158);
-    height: 2px;
+    height: 0.125rem;
     border: none;
 }
-
